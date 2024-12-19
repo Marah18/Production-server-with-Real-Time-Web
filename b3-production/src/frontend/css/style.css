@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333333;
+}
+
+nav {
+    background: #fd7a4e;
+    color: rgb(10, 0, 9);
+    margin-bottom: 10px;
+    height: 60px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    justify-content: center;
+}
+
+.projects h1 {
+    text-align: center; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    border-color: #fd7a4e;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box; 
+    width: 800px;
+    margin: 0 auto; 
+    
+}
+
+.project-card h2 {
+    margin-top: 0;
+}
+
+.project-card p {
+    color: #555;
+    overflow: hidden;
+}
+
+.error {
+    color: red;
+}
+
+.home {
+    padding: 20px;
+}
+
+.issue-card {
+    border: 1px solid #ff9800; 
+    border-radius: 8px; 
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: #fff;
+    height: 330px; 
+    box-sizing: border-box; 
+    width: 900px;
+    margin: 10px auto; 
+}
+
+.issue-card.opened {
+    background-color: rgb(181, 208, 182); 
+}
+
+.issue-card.closed {
+    background-color: #fff3e0; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-card button {
+    background-color: #fd7a4e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.project-card button:hover {
+    background-color: green;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#messageLink {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(231, 229, 229, 0.944);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid #ff9800; 
+    flex-direction: column; 
+    margin: 10px auto; 
+    width: 50%;
+
+}
+
+#messageLink p {
+    margin: 5px 0;
+    text-align: center;
+}
